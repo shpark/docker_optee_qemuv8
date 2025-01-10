@@ -49,6 +49,7 @@ RUN apt-get -y --allow-downgrades --allow-remove-essential --allow-change-held-p
 	python3-pip \
 	python3-pyelftools \
 	python3-serial \
+	python3-tomli \
 	python-is-python3 \
 	rsync \
 	unzip \
@@ -64,8 +65,9 @@ RUN apt-get -y --allow-downgrades --allow-remove-essential --allow-change-held-p
 	wget \
 	# dev packages \
 	tmux \
-	ccls \
 	bear \
+	clangd \
+	vim \
 	sudo
 
 # Download repo
