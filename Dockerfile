@@ -7,6 +7,8 @@ ENV TZ=Europe/Stockholm
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
+RUN apt-get upgrade
+
 RUN apt-get update
 
 RUN apt-get -y --allow-downgrades --allow-remove-essential --allow-change-held-packages install apt-utils
